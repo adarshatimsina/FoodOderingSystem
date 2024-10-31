@@ -1,4 +1,4 @@
-# FoodeOderingSystem
+# FoodOderingSystem
 This is an assignment code.
 
 FOS (Food Ordering System) for McGee restaurant using a RMI distributed technology.
