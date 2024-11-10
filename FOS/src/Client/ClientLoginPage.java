@@ -15,6 +15,7 @@ public class ClientLoginPage extends javax.swing.JFrame {
     /**
      * Creates new form ClientLoginPage
      */
+    public static String governmentId; 
     public ClientLoginPage() {
         initComponents();
     }
@@ -155,11 +156,13 @@ public class ClientLoginPage extends javax.swing.JFrame {
         boolean isLoggedIn = fos.userLogin(governmentID, password);
 
         if (isLoggedIn) {
+            governmentId = governmentID;
             JOptionPane.showMessageDialog(null, "Login successful!");
             // Clear input fields
             government_ID.setText("");
             passwordField.setText("");
-            // You can also navigate to the next screen or main application area here
+            this.dispose();
+            new MenuPage().setVisible(true);
         } else {
             JOptionPane.showMessageDialog(null, "Login failed. Please check your credentials.");
         }

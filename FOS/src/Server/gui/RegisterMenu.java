@@ -8,6 +8,7 @@ import Database.DatabaseConnection;
 import javax.swing.JOptionPane;
 import java.sql.PreparedStatement;
 import java.sql.Connection; 
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -198,6 +199,8 @@ public class RegisterMenu extends javax.swing.JFrame {
             }
         });
     }
+    
+   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> categoryBox;
